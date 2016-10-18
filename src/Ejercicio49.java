@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Ejercicio49 {
 
 	public static void main(String[] args) {
-		/* Hacer un algoritmo que escriba un triabgulo Floyd. Leeremos un numero n que representara el numero de filas a escribir
+		/* 49. Hacer un algoritmo que escriba un triabgulo Floyd. Leeremos un numero n que representara el numero de filas a escribir
 		Exemple per N=4
 		1
 		2 3
