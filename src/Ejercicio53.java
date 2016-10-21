@@ -3,41 +3,30 @@ import java.util.Scanner;
 public class Ejercicio53 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Hacer un programa para dividir dos numeros enteros M y N por el metodo de 
+		// restas succesivas, dando como resultado el cociente y el residuo
 
-		int n = 0;
-		int m = 0;
-		int	q = 0;
-		int residu = 0;
+		Scanner entrada = new Scanner (System.in);
 		
+		int residuo, cociente = 0, M, N;
 		
-		Scanner lector = new Scanner (System.in);
+		System.out.println("Introduce el numero a dividir.");
 		
-		System.out.println("Calcular el m�xim com� divisor");
+		M = entrada.nextInt();
 		
-		System.out.print("Introdueix el valor enter a dividir: ");
-		m=lector.nextInt();
-		lector.nextLine();
-				
-		System.out.print("Introdueix el valor enter com a divisor: ");
-		n=lector.nextInt();
-		lector.nextLine();
-				
+		System.out.println("Introduce el numero divisor");
+		
+		N = entrada.nextInt();
+		
+		residuo = M;
+		
+		while(residuo >= N)
+		{
+			residuo=residuo - N;
 			
-		
-		//atribuir el valor dividend a una variable auxiliar per poder-la utilitzar en operacions aritm�tiques.
-		residu=m;
-		
-		while(residu>=n){
-			//fer restes fins que el resultat(dividend/m) sigui inferior al divisor.
-			residu=residu-n;
-			//comptar les restes per saber el quocient.
-			q++;
+			cociente++;
 		}
-		System.out.println("El quoficient �s: "+ q +". "+ "El residu �s: "+residu+"." );
-		
-		lector.close();
-
+		System.out.println("El coficiente es: "+ cociente +". El residuo es: "+residuo);
 	}
 
 }

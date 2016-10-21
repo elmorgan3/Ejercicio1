@@ -11,9 +11,7 @@ public class Ejercicio1 {
 			
 			//Inicializamos una variable de tipo objeto de la clase Scanner para luego poder leer por teclado
 			Scanner entrada = new Scanner(System.in);
-			
-			
-			
+
 			while(escrito != true)
 			{
 				System.out.println("Escribe el radio del circulo.");
@@ -37,8 +35,6 @@ public class Ejercicio1 {
 			Resultado = Math.PI * (Radio*Radio);
 			
 			System.out.println("El radio de la circunferencia es " + Resultado + " cm.");
-		
-		
 	}
 	
 }
