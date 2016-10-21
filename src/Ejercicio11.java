@@ -8,21 +8,21 @@ public class Ejercicio11 {
 		// C coge el valor de B
 		// A coge el valor de C
 		
-		int A, B, C, aux;
+		String A, B, C, aux;
 		
 		Scanner entrada = new Scanner (System.in);
 		
 		System.out.println("Introduce el valor de A");
 		
-		A = entrada.nextInt();
+		A = entrada.nextLine();
 		
 		System.out.println("Introduce el valor de B");
 		
-		B = entrada.nextInt();
+		B = entrada.nextLine();
 		
 		System.out.println("Introduce el valor de C");
 		
-		C = entrada.nextInt();
+		C = entrada.nextLine();
 		
 		aux = B;
 		
